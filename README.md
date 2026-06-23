@@ -34,23 +34,37 @@ Este projeto foi desenvolvido em colaboração por:
 
 ## 🖼️ Interface do Usuário (Protótipos do Sistema)
 
+## 🖼️ Interface do Usuário (Protótipos do Sistema)
+
 ### 🔑 Fluxo de Autenticação Lúdica do Aluno
 
 O processo de login foi projetado em etapas simplificadas (*steppers*) para garantir acessibilidade e usabilidade por crianças pequenas, evitando a necessidade de digitação complexa de e-mails.
 
-|                           Passo 1: Seleção da Turma                           |                           Passo 2: Seleção do Nome                           |                   Passo 3: Entrada com PIN de 4 dígitos                   |
-| :---------------------------------------------------------------------------: | :--------------------------------------------------------------------------: | :-----------------------------------------------------------------------: |
-| <img src="./docs/login-step-turma.png" height="210px" alt="Seleção da Turma"> | <img src="./docs/login-step-nome.png" height="210px" alt="Seleção do Aluno"> | <img src="./docs/login-step-pin.png" height="210px" alt="Entrada de PIN"> |
+<p align="center">
+  <img src="./docs/login-step-turma.png" width="30%" alt="Passo 1: Seleção da Turma">
+  <img src="./docs/login-step-nome.png" width="30%" alt="Passo 2: Seleção do Nome">
+  <img src="./docs/login-step-pin.png" width="30%" alt="Passo 3: Entrada com PIN de 4 dígitos">
+</p>
+
+<p align="center">
+  <strong>Passo 1:</strong> Seleção da Turma &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <strong>Passo 2:</strong> Seleção do Nome &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <strong>Passo 3:</strong> Entrada com PIN de 4 dígitos
+</p>
 
 ### 🎓 Módulos Gamificados e Reconhecimento em Tempo Real
 
 A área de aprendizado possui módulos temáticos organizados por conquistas e níveis de experiência, além de um espaço dedicado à captura e ao processamento da câmera local.
 
-|                      Painel Principal (Trilhas de Aprendizado)                     |                             Interface de Captura da Câmera e IA                            |
-| :--------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------: |
-| <img src="./docs/dashboard-aluno.png" height="280px" alt="Módulos de Aprendizado"> | <img src="./docs/camera-recognition.png" height="280px" alt="Interface de Reconhecimento"> |
+<p align="center">
+  <img src="./docs/dashboard-aluno.png" width="45%" alt="Painel Principal - Trilhas de Aprendizado">
+  <img src="./docs/camera-recognition.png" width="45%" alt="Interface de Captura da Câmera e IA">
+</p>
 
----
+<p align="center">
+  <strong>Painel Principal (Trilhas de Aprendizado)</strong> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <strong>Interface de Captura da Câmera e IA</strong>
+</p>
 
 ## 💡 Diferencial do Projeto e Arquitetura de IA
 
