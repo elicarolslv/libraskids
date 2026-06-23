@@ -27,7 +27,7 @@
 
 O **LibrasKids** é um software educacional interativo que apoia o ensino da **Língua Brasileira de Sinais (Libras)** a crianças ouvintes por meio de uma abordagem lúdica e gamificada. O sistema integra uma interface web em **React** com um ecossistema de **Inteligência Artificial** no back-end responsável pelo reconhecimento de sinais em tempo real.
 
-Como diferencial, o projeto reconhece **tanto sinais estáticos quanto sinais dinâmicos** — abrangendo letras do alfabeto manual, letras com movimento e palavras completas em Libras.
+Como diferencial, o projeto reconhece **tanto sinais estáticos quanto sinais dinâmicos**, abrangendo letras do alfabeto manual, letras com movimento e palavras completas em Libras.
 
 ### 👥 Equipe
 
