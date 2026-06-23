@@ -1,0 +1,30 @@
+# === DEPENDÊNCIAS E AMBIENTES COMPILADOS ===
+frontend/node_modules/
+backend/venv/
+
+# === SEGURANÇA: BANCO DE DADOS LOCAL E CONFIGURAÇÕES ===
+backend/instance/
+*.db
+*.sqlite
+
+# === MODELOS DE INTELIGÊNCIA ARTIFICIAL (MUITO PESADOS) ===
+backend/models/*.h5
+backend/models/*.keras
+backend/models/*.joblib
+backend/models/*.npy
+
+# === DATASETS E ARQUIVOS DE MÍDIA LOCAIS ===
+dataset/
+Dados_Libras/
+frontend/src/assets/alfabeto_videos/
+frontend/src/assets/emocoes_videos/
+frontend/src/assets/saudacoes_videos/
+frontend/src/assets/emocoes_videos.zip
+frontend/src/assets/saudacoes_videos.zip
+
+# === CACHES DO PYTHON E SISTEMA ===
+__pycache__/
+backend/__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db

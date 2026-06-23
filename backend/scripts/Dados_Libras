@@ -1,0 +1,50 @@
+import cv2 
+import mediapipe as mp 
+import numpy as np 
+import os 
+# Configurações 
+DATA_PATH = os.path.join('Dados_Libras')  
+actions = np.array(['repouso', 'letra_J']) # Adicione outras letras aqui 
+no_sequences = 30 # Quantas vezes você vai gravar cada gesto 
+sequence_length = 30 # Quantos frames terá cada vídeo/sequência 
+mp_hands = mp.solutions.hands 
+hands = mp_hands.Hands(static_image_mode=False, max_num_hands=1, 
+min_detection_confidence=0.5) 
+mp_draw = mp.solutions.drawing_utils 
+def extract_landmarks(results): 
+    if results.multi_hand_landmarks: 
+# Extrai os 21 pontos (x, y, z) e achata em um array de 63 elementos 
+        return np.array([[res.x, res.y, res.z] for res in 
+    results.multi_hand_landmarks[0].landmark]).flatten() 
+    return np.zeros(21*3) 
+cap = cv2.VideoCapture(0) 
+ 
+for action in actions: 
+    for sequence in range(no_sequences): 
+        for frame_num in range(sequence_length): 
+            ret, frame = cap.read() 
+            image = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB) 
+            results = hands.process(image) 
+            image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR) 
+ 
+            if frame_num == 0: 
+                cv2.putText(image, f'INICIANDO COLETA PARA: {action}', (120,200),  
+                           cv2.FONT_HERSHEY_SIMPLEX, 1, (0,255,0), 4, cv2.LINE_AA) 
+                cv2.imshow('Coleta de Dados', image) 
+                cv2.waitKey(2000) # Pausa para você se posicionar 
+             
+            cv2.putText(image, f'Coletando {action} - Video {sequence}', (15,30),  
+                       cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,255), 1, cv2.LINE_AA) 
+            cv2.imshow('Coleta de Dados', image) 
+ 
+            # Salva os pontos 
+            keypoints = extract_landmarks(results) 
+            path = os.path.join(DATA_PATH, action, str(sequence)) 
+            os.makedirs(path, exist_ok=True) 
+            np.save(os.path.join(path, str(frame_num)), keypoints) 
+ 
+            if cv2.waitKey(1) & 0xFF == ord('q'): 
+                break 
+ 
+cap.release() 
+cv2.destroyAllWindows()

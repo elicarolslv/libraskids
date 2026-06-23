@@ -1,0 +1,52 @@
+import os
+import numpy as np
+from tensorflow.keras.models import Sequential 
+from tensorflow.keras.layers import LSTM, Dense, Dropout 
+from tensorflow.keras.utils import to_categorical 
+from sklearn.model_selection import train_test_split 
+
+# --- CONFIGURAÇÕES DO PROJETO ---
+DATA_PATH = r'C:\Users\clari\OneDrive\Documentos\meu-projeto-libras\meu-projeto-libras\Dados_Libras' # Caminho das suas pastas de npy
+actions = np.array(['repouso', 'letra_J']) # Substitua pelos seus sinais
+no_sequences = 30 # Quantidade de vídeos/pastas por sinal
+sequence_length = 30 # Quantidade de frames por vídeo
+
+# 1. Carregamento e Pré-processamento
+label_map = {label: num for num, label in enumerate(actions)} 
+sequences, labels = [], [] 
+
+for action in actions: 
+    for sequence in range(no_sequences): 
+        window = [] 
+        for frame_num in range(sequence_length): 
+            # Corrigida a identação: Agora o load e o append estão DENTRO do loop de frames
+            res = np.load(os.path.join(DATA_PATH, action, str(sequence), f"{frame_num}.npy")) 
+            window.append(res) 
+        
+        # Após carregar os 30 frames, adicionamos a sequência e o label
+        sequences.append(window) 
+        labels.append(label_map[action]) 
+
+X = np.array(sequences) 
+y = to_categorical(labels).astype(int) 
+
+# Divisão de treino e teste
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.05) 
+
+# 2. Arquitetura do Modelo 
+model = Sequential() 
+# Input: sequence_length (30) e a quantidade de features por frame (63 no seu caso)
+model.add(LSTM(64, return_sequences=True, activation='relu', input_shape=(30, 63))) 
+model.add(LSTM(128, return_sequences=False, activation='relu')) 
+model.add(Dense(64, activation='relu')) 
+model.add(Dropout(0.2)) 
+model.add(Dense(32, activation='relu')) 
+model.add(Dense(actions.shape[0], activation='softmax')) 
+
+model.compile(optimizer='Adam', loss='categorical_crossentropy', metrics=['categorical_accuracy']) 
+
+# 3. Treinamento 
+model.fit(X_train, y_train, epochs=200, batch_size=32) 
+
+# 4. Salvar Modelo
+model.save('modelo_gestos.h5')
