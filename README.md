@@ -8,7 +8,7 @@
 
 ## 📺 Vídeo de Apresentação e Demonstração
 
-O funcionamento da aplicação em tempo real, os testes de interface e a dinâmica de reconhecimento de sinais podem ser assistidos diretamente na publicação oficial do projeto:
+O funcionamento da aplicação em tempo real, os testes de interface e a dinâmica de reconhecimento de sinais podem ser assistidos diretamente na publicação oficial do projeto:  
 👉 [Assista à demonstração completa no LinkedIn](https://www.linkedin.com/posts/elisandra-carol-da-silva-02424922b_libraskids-inteligenciaartificial-machinelearning-ugcPost-7473782059153670144-f8TH/)
 
 ---
@@ -27,48 +27,52 @@ O desenvolvimento do LibrasKids contemplou diferentes etapas da engenharia de so
 
 Este projeto foi desenvolvido em colaboração por:
 
-* **Elisandra Carol da Silva** — Desenvolvedora Full-Stack
-* **Maria Clara Soares Bertolo** — Desenvolvedora Full-Stack
+- **Elisandra Carol da Silva** — Desenvolvedora Full-Stack  
+- **Maria Clara Soares Bertolo** — Desenvolvedora Full-Stack  
 
 ---
 
 ## 🖼️ Interface do Usuário (Protótipos do Sistema)
 
 ### 🔑 Fluxo de Autenticação Lúdica do Aluno
-
 O processo de login foi projetado em etapas simplificadas (*steppers*) para garantir acessibilidade e usabilidade por crianças pequenas, evitando a necessidade de digitação complexa de e-mails.
 
-<p align="center">
-  <img src="./docs/login-step-turma.png" width="42%" alt="Passo 1: Seleção da Turma">
-  <img src="./docs/login-step-nome.png" width="28%" alt="Passo 2: Seleção do Nome">
-</p>
-
-<p align="center">
-  <strong>Passo 1:</strong> Seleção da Turma &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <strong>Passo 2:</strong> Seleção do Nome
-</p>
-
-<p align="center">
-  <img src="./docs/login-step-pin.png" width="38%" alt="Passo 3: Entrada com PIN de 4 dígitos">
-</p>
-
-<p align="center">
-  <strong>Passo 3:</strong> Entrada com PIN de 4 dígitos
-</p>
+<table align="center">
+  <tr>
+    <td align="center"><strong>Passo 1: Seleção da Turma</strong></td>
+    <td align="center"><strong>Passo 2: Seleção do Nome</strong></td>
+    <td align="center"><strong>Passo 3: Entrada com PIN de 4 dígitos</strong></td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="./docs/login-step-turma.png" width="320px" alt="Passo 1: Seleção da Turma">
+    </td>
+    <td align="center">
+      <img src="./docs/login-step-nome.png" width="420px" alt="Passo 2: Seleção do Nome">
+    </td>
+    <td align="center">
+      <img src="./docs/login-step-pin.png" width="320px" alt="Passo 3: Entrada com PIN de 4 dígitos">
+    </td>
+  </tr>
+</table>
 
 ### 🎓 Módulos Gamificados e Reconhecimento em Tempo Real
-
 A área de aprendizado possui módulos temáticos organizados por conquistas e níveis de experiência, além de um espaço dedicado à captura e ao processamento da câmera local.
 
-<p align="center">
-  <img src="./docs/dashboard-aluno.png" width="45%" alt="Painel Principal - Trilhas de Aprendizado">
-  <img src="./docs/camera-recognition.png" width="45%" alt="Interface de Captura da Câmera e IA">
-</p>
-
-<p align="center">
-  <strong>Painel Principal (Trilhas de Aprendizado)</strong> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <strong>Interface de Captura da Câmera e IA</strong>
-</p>
+<table align="center">
+  <tr>
+    <td align="center"><strong>Painel Principal (Trilhas de Aprendizado)</strong></td>
+    <td align="center"><strong>Interface de Captura da Câmera e IA</strong></td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="./docs/dashboard-aluno.png" width="460px" alt="Painel Principal - Trilhas de Aprendizado">
+    </td>
+    <td align="center">
+      <img src="./docs/camera-recognition.png" width="460px" alt="Interface de Captura da Câmera e IA">
+    </td>
+  </tr>
+</table>
 
 ---
 
@@ -81,11 +85,9 @@ Essa proposta amplia o escopo do software em relação a soluções que se limit
 Para atender a essa necessidade, a arquitetura de Inteligência Artificial do projeto foi organizada em duas frentes principais:
 
 ### 🔹 Reconhecimento de sinais estáticos
-
 Nos sinais estáticos, o sistema utiliza os pontos de referência das mãos capturados com **MediaPipe**, analisando a configuração espacial dos gestos em um único instante. Essa abordagem é aplicada ao reconhecimento de letras e sinais sem deslocamento, em que a posição da mão é suficiente para a classificação.
 
 ### 🔹 Reconhecimento de sinais dinâmicos
-
 Nos sinais dinâmicos, o sistema precisa considerar a **sequência temporal dos movimentos**, já que a interpretação não depende apenas de uma pose isolada, mas da trajetória executada ao longo de vários quadros.
 
 Para essa etapa, foi utilizado o algoritmo **KNN (K-Nearest Neighbors)**, aplicado especificamente na **classificação dos sinais dinâmicos**. A partir dos pontos rastreados pelo MediaPipe em múltiplos frames, o sistema compara padrões de movimento e calcula a proximidade entre a execução do usuário e os exemplos previamente mapeados na base de treinamento.
@@ -96,9 +98,9 @@ Com isso, o **KNN foi empregado como parte da estratégia de reconhecimento de l
 
 ## ⏱️ Contexto Acadêmico
 
-* **Instituição:** FATEC Ourinhos
-* **Curso:** Análise e Desenvolvimento de Sistemas (ADS)
-* **Natureza:** Trabalho de Conclusão de Curso / Projeto Acadêmico
+- **Instituição:** FATEC Ourinhos  
+- **Curso:** Análise e Desenvolvimento de Sistemas (ADS)  
+- **Natureza:** Trabalho de Conclusão de Curso / Projeto Acadêmico  
 
 ---
 
@@ -108,13 +110,13 @@ Por questões de **segurança, direitos autorais, conformidade com a LGPD (Lei G
 
 Os componentes isolados incluem:
 
-1. **Banco de Dados Local (`backend/instance/professores.db`)**
+1. **Banco de Dados Local (`backend/instance/professores.db`)**  
    Ocultado para proteger informações confidenciais de cadastro.
 
-2. **Datasets de Imagens e Amostras (`dataset/` e `Dados_Libras/`)**
+2. **Datasets de Imagens e Amostras (`dataset/` e `Dados_Libras/`)**  
    Bases brutas de mapeamento de sinais estáticos e dinâmicos, incluindo letras, saudações e emoções. A omissão desses arquivos visa preservar a base de dados produzida durante o desenvolvimento acadêmico.
 
-3. **Assets Originais de Vídeo e Mídias (`.zip` e pastas de vídeos em `frontend/src/assets/`)**
+3. **Assets Originais de Vídeo e Mídias (`.zip` e pastas de vídeos em `frontend/src/assets/`)**  
    Arquivos utilizados no treinamento e validação do sistema, removidos da versão pública para resguardar direitos de imagem e evitar o armazenamento de arquivos binários pesados no histórico do Git.
 
 > **Nota:** embora os dados brutos de treinamento não estejam disponíveis publicamente, os arquivos de inferência e os pesos convertidos para a web permanecem disponíveis em `frontend/public/tfjs_model/`, permitindo a execução da lógica de IA no front-end.
@@ -124,35 +126,31 @@ Os componentes isolados incluem:
 ## 🛠️ Tecnologias Utilizadas
 
 ### Front-End
-
-* React.js
-* Vite
-* Context API
-* TensorFlow.js
-* HTML5
-* CSS3
-* JavaScript
+- React.js  
+- Vite  
+- Context API  
+- TensorFlow.js  
+- HTML5  
+- CSS3  
+- JavaScript  
 
 ### Back-End
-
-* Python
-* Flask
-* SQLite
-* SQLAlchemy
+- Python  
+- Flask  
+- SQLite  
+- SQLAlchemy  
 
 ### Inteligência Artificial e Visão Computacional
-
-* MediaPipe
-* OpenCV
-* TensorFlow / Keras
-* KNN (K-Nearest Neighbors)
-* Modelos em `.h5`, `.keras`, `.joblib` e TensorFlow.js
+- MediaPipe  
+- OpenCV  
+- TensorFlow / Keras  
+- KNN (K-Nearest Neighbors)  
+- Modelos em `.h5`, `.keras`, `.joblib` e TensorFlow.js  
 
 ### Prototipação e Organização
-
-* Figma
-* Git
-* GitHub
+- Figma  
+- Git  
+- GitHub  
 
 ---
 
@@ -160,12 +158,12 @@ Os componentes isolados incluem:
 
 A camada de Inteligência Artificial do projeto foi estruturada para contemplar diferentes etapas do reconhecimento de sinais:
 
-* **Coleta de dados com visão computacional:** captura de landmarks das mãos utilizando **MediaPipe** e **OpenCV**.
-* **Tratamento e organização dos dados:** scripts para coleta, unificação e preparação das amostras de treino.
-* **Reconhecimento de sinais estáticos:** análise da posição espacial das mãos em sinais sem movimento.
-* **Reconhecimento de sinais dinâmicos:** classificação de **letras com movimento** e **palavras em Libras** com apoio do **KNN**, considerando a sequência temporal dos frames.
-* **Treinamento e validação de modelos:** uso de scripts em Python para gerar, testar e validar os modelos de reconhecimento.
-* **Exportação para a web:** conversão dos modelos treinados para execução no navegador com **TensorFlow.js**.
+- **Coleta de dados com visão computacional:** captura de landmarks das mãos utilizando **MediaPipe** e **OpenCV**.
+- **Tratamento e organização dos dados:** scripts para coleta, unificação e preparação das amostras de treino.
+- **Reconhecimento de sinais estáticos:** análise da posição espacial das mãos em sinais sem movimento.
+- **Reconhecimento de sinais dinâmicos:** classificação de **letras com movimento** e **palavras em Libras** com apoio do **KNN**, considerando a sequência temporal dos frames.
+- **Treinamento e validação de modelos:** uso de scripts em Python para gerar, testar e validar os modelos de reconhecimento.
+- **Exportação para a web:** conversão dos modelos treinados para execução no navegador com **TensorFlow.js**.
 
 ---
 
@@ -199,26 +197,3 @@ meu-projeto-libras/
 ├── dataset/                    # Base de dados de sinais (não versionada)
 ├── Dados_Libras/               # Arquivos auxiliares de treino (não versionados)
 └── .gitignore                  # Regras de exclusão de arquivos sensíveis
-```
-
----
-
-## ⚙️ Funcionalidades do Sistema
-
-O LibrasKids foi projetado para oferecer uma experiência educacional interativa, reunindo recursos de interface, autenticação e reconhecimento de sinais. Entre as principais funcionalidades desenvolvidas, destacam-se:
-
-* Interface lúdica voltada ao ensino de Libras para crianças;
-* Fluxo de autenticação simplificado para o público infantil;
-* Navegação entre módulos de aprendizagem;
-* Reconhecimento de sinais estáticos;
-* Reconhecimento de sinais dinâmicos, incluindo letras com movimento e palavras;
-* Integração entre front-end e back-end para processamento dos dados;
-* Execução do modelo de IA diretamente no navegador com TensorFlow.js.
-
----
-
-## 🚀 Considerações Finais
-
-O **LibrasKids** foi desenvolvido com o objetivo de unir **tecnologia, acessibilidade e educação** em uma única solução, explorando recursos de desenvolvimento web, visão computacional e inteligência artificial para apoiar o ensino de Libras de forma mais interativa.
-
-Além do desenvolvimento da interface e da arquitetura do sistema, o projeto também se destacou pela construção de uma solução capaz de reconhecer **sinais estáticos e dinâmicos**, incluindo **letras com movimento** e **palavras em Libras**, aspecto que representa um dos principais diferenciais técnicos do trabalho.
