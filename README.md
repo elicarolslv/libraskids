@@ -38,17 +38,17 @@ Este projeto foi desenvolvido em colaboração por:
 
 O processo de login foi projetado em etapas simplificadas (*steppers*) para garantir acessibilidade e usabilidade por crianças pequenas, evitando a necessidade de digitação complexa de e-mails.
 
-|                           Passo 1: Seleção da Turma                          |                           Passo 2: Seleção do Nome                          |                   Passo 3: Entrada com PIN de 4 dígitos                  |
-| :--------------------------------------------------------------------------: | :-------------------------------------------------------------------------: | :----------------------------------------------------------------------: |
-| <img src="./docs/login-step-turma.png" width="250px" alt="Seleção da Turma"> | <img src="./docs/login-step-nome.png" width="250px" alt="Seleção do Aluno"> | <img src="./docs/login-step-pin.png" width="250px" alt="Entrada de PIN"> |
+|                           Passo 1: Seleção da Turma                           |                           Passo 2: Seleção do Nome                           |                   Passo 3: Entrada com PIN de 4 dígitos                   |
+| :---------------------------------------------------------------------------: | :--------------------------------------------------------------------------: | :-----------------------------------------------------------------------: |
+| <img src="./docs/login-step-turma.png" height="210px" alt="Seleção da Turma"> | <img src="./docs/login-step-nome.png" height="210px" alt="Seleção do Aluno"> | <img src="./docs/login-step-pin.png" height="210px" alt="Entrada de PIN"> |
 
 ### 🎓 Módulos Gamificados e Reconhecimento em Tempo Real
 
 A área de aprendizado possui módulos temáticos organizados por conquistas e níveis de experiência, além de um espaço dedicado à captura e ao processamento da câmera local.
 
-|                     Painel Principal (Trilhas de Aprendizado)                     |                            Interface de Captura da Câmera e IA                            |
-| :-------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------: |
-| <img src="./docs/dashboard-aluno.png" width="400px" alt="Módulos de Aprendizado"> | <img src="./docs/camera-recognition.png" width="400px" alt="Interface de Reconhecimento"> |
+|                      Painel Principal (Trilhas de Aprendizado)                     |                             Interface de Captura da Câmera e IA                            |
+| :--------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------: |
+| <img src="./docs/dashboard-aluno.png" height="280px" alt="Módulos de Aprendizado"> | <img src="./docs/camera-recognition.png" height="280px" alt="Interface de Reconhecimento"> |
 
 ---
 
@@ -180,3 +180,25 @@ meu-projeto-libras/
 ├── Dados_Libras/               # Arquivos auxiliares de treino (não versionados)
 └── .gitignore                  # Regras de exclusão de arquivos sensíveis
 ```
+
+---
+
+## ⚙️ Funcionalidades do Sistema
+
+O LibrasKids foi projetado para oferecer uma experiência educacional interativa, reunindo recursos de interface, autenticação e reconhecimento de sinais. Entre as principais funcionalidades desenvolvidas, destacam-se:
+
+* Interface lúdica voltada ao ensino de Libras para crianças;
+* Fluxo de autenticação simplificado para o público infantil;
+* Navegação entre módulos de aprendizagem;
+* Reconhecimento de sinais estáticos;
+* Reconhecimento de sinais dinâmicos, incluindo letras com movimento e palavras;
+* Integração entre front-end e back-end para processamento dos dados;
+* Execução do modelo de IA diretamente no navegador com TensorFlow.js.
+
+---
+
+## 🚀 Considerações Finais
+
+O **LibrasKids** foi desenvolvido com o objetivo de unir **tecnologia, acessibilidade e educação** em uma única solução, explorando recursos de desenvolvimento web, visão computacional e inteligência artificial para apoiar o ensino de Libras de forma mais interativa.
+
+Além do desenvolvimento da interface e da arquitetura do sistema, o projeto também se destacou pela construção de uma solução capaz de reconhecer **sinais estáticos e dinâmicos**, incluindo **letras com movimento** e **palavras em Libras**, aspecto que representa um dos principais diferenciais técnicos do trabalho.
