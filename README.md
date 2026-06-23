@@ -1,199 +1,245 @@
-# 🤟 LibrasKids - Software Educacional com Inteligência Artificial para Ensino de Libras
+# 🤟 LibrasKids
 
 <p align="center">
-  <a href="https://www.linkedin.com/posts/elisandra-carol-da-silva-02424922b_libraskids-inteligenciaartificial-machinelearning-ugcPost-7473782059153670144-f8TH/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADmFyNwBqC0Juse2lpfrFXJL4BSOpYksPzE" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-Vídeo_de_Apresentação_do_Projeto-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Assista ao Vídeo no LinkedIn">
+  <strong>Software educacional com IA para ensino de Libras para crianças</strong><br>
+  <em>AI-powered educational software for teaching Brazilian Sign Language to children</em>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/TensorFlow.js-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" />
+  <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" />
+  <img src="https://img.shields.io/badge/MediaPipe-0097A7?style=for-the-badge&logo=google&logoColor=white" />
+</p>
+
+<p align="center">
+  <a href="https://www.linkedin.com/posts/elisandra-carol-da-silva-02424922b_libraskids-inteligenciaartificial-machinelearning-ugcPost-7473782059153670144-f8TH/">
+    <img src="https://img.shields.io/badge/LinkedIn-Vídeo_de_Demonstração-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
   </a>
 </p>
 
-## 📺 Vídeo de Apresentação e Demonstração
-
-O funcionamento da aplicação em tempo real, os testes de interface e a dinâmica de reconhecimento de sinais podem ser assistidos diretamente na publicação oficial do projeto:  
-👉 [Assista à demonstração completa no LinkedIn](https://www.linkedin.com/posts/elisandra-carol-da-silva-02424922b_libraskids-inteligenciaartificial-machinelearning-ugcPost-7473782059153670144-f8TH/)
-
 ---
 
-## 📌 Sobre o Projeto
+## 🇧🇷 Português
 
-O **LibrasKids** é um software educacional interativo desenvolvido para apoiar o ensino da **Língua Brasileira de Sinais (Libras)** a crianças ouvintes por meio de uma abordagem lúdica, visual e interativa. O sistema integra uma interface web desenvolvida em **React** com um ecossistema de **Inteligência Artificial** no back-end, responsável pela coleta, organização, treinamento e validação de modelos de reconhecimento de sinais.
+### 📌 Sobre o Projeto
 
-Como diferencial, o projeto foi estruturado para reconhecer **tanto sinais estáticos quanto sinais dinâmicos**, abrangendo não apenas letras do alfabeto manual em posições fixas, mas também **letras com movimento** e **palavras completas em Libras**, ampliando as possibilidades de interação e aprendizagem dentro da aplicação.
+O **LibrasKids** é um software educacional interativo que apoia o ensino da **Língua Brasileira de Sinais (Libras)** a crianças ouvintes por meio de uma abordagem lúdica e gamificada. O sistema integra uma interface web em **React** com um ecossistema de **Inteligência Artificial** no back-end responsável pelo reconhecimento de sinais em tempo real.
 
-O desenvolvimento do LibrasKids contemplou diferentes etapas da engenharia de software, desde a prototipação da interface no **Figma**, passando pela coleta de dados com **MediaPipe** e **OpenCV**, até o treinamento dos modelos e sua posterior exportação para execução em tempo real na web por meio do **TensorFlow.js**.
+Como diferencial, o projeto reconhece **tanto sinais estáticos quanto sinais dinâmicos** — abrangendo letras do alfabeto manual, letras com movimento e palavras completas em Libras.
 
----
+### 👥 Equipe
 
-## 👥 Equipe Desenvolvedora
+| Nome | Papel |
+|---|---|
+| **Elisandra Carol da Silva** | Desenvolvedora Full-Stack |
+| **Maria Clara Soares Bertolo** | Desenvolvedora Full-Stack |
 
-Este projeto foi desenvolvido em colaboração por:
+### 🖼️ Interface
 
-- **Elisandra Carol da Silva** — Desenvolvedora Full-Stack  
-- **Maria Clara Soares Bertolo** — Desenvolvedora Full-Stack  
+#### Fluxo de Autenticação do Aluno
+Login em etapas simplificadas para crianças pequenas — sem necessidade de digitar e-mail.
 
----
-
-## 🖼️ Interface do Usuário (Protótipos do Sistema)
-
-### 🔑 Fluxo de Autenticação Lúdica do Aluno
-O processo de login foi projetado em etapas simplificadas (*steppers*) para garantir acessibilidade e usabilidade por crianças pequenas, evitando a necessidade de digitação complexa de e-mails.
-
-<table align="center">
+<table>
   <tr>
-    <td align="center"><strong>Passo 1: Seleção da Turma</strong></td>
-    <td align="center"><strong>Passo 2: Seleção do Nome</strong></td>
-    <td align="center"><strong>Passo 3: Entrada com PIN de 4 dígitos</strong></td>
+    <td align="center"><strong>Passo 1: Turma</strong></td>
+    <td align="center"><strong>Passo 2: Nome</strong></td>
+    <td align="center"><strong>Passo 3: PIN</strong></td>
   </tr>
   <tr>
-    <td align="center">
-      <img src="./docs/login-step-turma.png" width="320px" alt="Passo 1: Seleção da Turma">
-    </td>
-    <td align="center">
-      <img src="./docs/login-step-nome.png" width="420px" alt="Passo 2: Seleção do Nome">
-    </td>
-    <td align="center">
-      <img src="./docs/login-step-pin.png" width="320px" alt="Passo 3: Entrada com PIN de 4 dígitos">
-    </td>
+    <td><img src="./docs/login-step-turma.png" width="260px" /></td>
+    <td><img src="./docs/login-step-nome.png" width="340px" /></td>
+    <td><img src="./docs/login-step-pin.png" width="260px" /></td>
   </tr>
 </table>
 
-### 🎓 Módulos Gamificados e Reconhecimento em Tempo Real
-A área de aprendizado possui módulos temáticos organizados por conquistas e níveis de experiência, além de um espaço dedicado à captura e ao processamento da câmera local.
+#### Módulos e Reconhecimento em Tempo Real
 
-<table align="center">
+<table>
   <tr>
-    <td align="center"><strong>Painel Principal (Trilhas de Aprendizado)</strong></td>
-    <td align="center"><strong>Interface de Captura da Câmera e IA</strong></td>
+    <td align="center"><strong>Painel de Trilhas</strong></td>
+    <td align="center"><strong>Câmera + IA</strong></td>
   </tr>
   <tr>
-    <td align="center">
-      <img src="./docs/dashboard-aluno.png" width="460px" alt="Painel Principal - Trilhas de Aprendizado">
-    </td>
-    <td align="center">
-      <img src="./docs/camera-recognition.png" width="460px" alt="Interface de Captura da Câmera e IA">
-    </td>
+    <td><img src="./docs/dashboard-aluno.png" width="380px" /></td>
+    <td><img src="./docs/camera-recognition.png" width="380px" /></td>
   </tr>
 </table>
 
----
+### 💡 Arquitetura de IA
 
-## 💡 Diferencial do Projeto e Arquitetura de IA
+A IA foi estruturada em duas frentes:
 
-O principal diferencial do **LibrasKids** está na capacidade de reconhecer **não apenas sinais estáticos**, como letras representadas por posições fixas das mãos, mas também **sinais dinâmicos**, incluindo **letras com movimento** e **palavras completas em Libras**, como saudações e expressões.
+**Sinais estáticos** — análise da posição espacial da mão em um único instante, usando landmarks capturados pelo MediaPipe.
 
-Essa proposta amplia o escopo do software em relação a soluções que se limitam apenas ao reconhecimento do alfabeto manual estático, tornando a experiência de aprendizagem mais próxima do uso real da língua de sinais.
+**Sinais dinâmicos** — classificação por sequência temporal de frames usando **KNN (K-Nearest Neighbors)**, capturando letras com movimento e palavras completas em Libras.
 
-Para atender a essa necessidade, a arquitetura de Inteligência Artificial do projeto foi organizada em duas frentes principais:
+Os modelos treinados estão disponíveis em `backend/models/` e a versão exportada para o navegador está em `frontend/public/tfjs_model/`.
 
-### 🔹 Reconhecimento de sinais estáticos
-Nos sinais estáticos, o sistema utiliza os pontos de referência das mãos capturados com **MediaPipe**, analisando a configuração espacial dos gestos em um único instante. Essa abordagem é aplicada ao reconhecimento de letras e sinais sem deslocamento, em que a posição da mão é suficiente para a classificação.
+### 🛠️ Tecnologias
 
-### 🔹 Reconhecimento de sinais dinâmicos
-Nos sinais dinâmicos, o sistema precisa considerar a **sequência temporal dos movimentos**, já que a interpretação não depende apenas de uma pose isolada, mas da trajetória executada ao longo de vários quadros.
+| Camada | Tecnologias |
+|---|---|
+| **Front-End** | React.js, Vite, TensorFlow.js, Context API, HTML5, CSS3 |
+| **Back-End** | Python, Flask, SQLite, SQLAlchemy |
+| **IA / Visão Computacional** | MediaPipe, OpenCV, TensorFlow/Keras, KNN |
+| **Formatos de Modelo** | `.h5`, `.keras`, `.joblib`, `.npy`, TensorFlow.js |
+| **Prototipação** | Figma, Git, GitHub |
 
-Para essa etapa, foi utilizado o algoritmo **KNN (K-Nearest Neighbors)**, aplicado especificamente na **classificação dos sinais dinâmicos**. A partir dos pontos rastreados pelo MediaPipe em múltiplos frames, o sistema compara padrões de movimento e calcula a proximidade entre a execução do usuário e os exemplos previamente mapeados na base de treinamento.
+### 🚀 Como Rodar Localmente
 
-Com isso, o **KNN foi empregado como parte da estratégia de reconhecimento de letras com movimento e palavras em Libras**, permitindo ao LibrasKids lidar com gestos dinâmicos de forma mais adequada ao contexto educacional proposto pelo projeto.
+#### Pré-requisitos
+- Python 3.9+
+- Node.js 18+
+- Git
 
----
+#### Back-End
 
-## ⏱️ Contexto Acadêmico
+```bash
+# Clone o repositório
+git clone https://github.com/elicarolslv/libraskids.git
+cd libraskids
 
-- **Instituição:** FATEC Ourinhos  
-- **Curso:** Análise e Desenvolvimento de Sistemas (ADS)  
-- **Natureza:** Trabalho de Conclusão de Curso / Projeto Acadêmico  
+# Crie e ative o ambiente virtual
+cd backend
+python -m venv venv
 
----
+# Windows
+venv\Scripts\activate
+# Linux/Mac
+source venv/bin/activate
 
-## 🔒 Proteção de Dados e Propriedade Intelectual
+# Instale as dependências
+pip install -r requirements.txt
 
-Por questões de **segurança, direitos autorais, conformidade com a LGPD (Lei Geral de Proteção de Dados)** e prevenção a plágio, determinados arquivos do ecossistema original foram intencionalmente omitidos deste repositório público por meio do arquivo `.gitignore`.
+# Inicie o servidor
+python app.py
+```
 
-Os componentes isolados incluem:
+#### Front-End
 
-1. **Banco de Dados Local (`backend/instance/professores.db`)**  
-   Ocultado para proteger informações confidenciais de cadastro.
+```bash
+# Em outro terminal, na raiz do projeto
+cd frontend
+npm install
+npm run dev
+```
 
-2. **Datasets de Imagens e Amostras (`dataset/` e `Dados_Libras/`)**  
-   Bases brutas de mapeamento de sinais estáticos e dinâmicos, incluindo letras, saudações e emoções. A omissão desses arquivos visa preservar a base de dados produzida durante o desenvolvimento acadêmico.
+Acesse em: `http://localhost:5173`
 
-3. **Assets Originais de Vídeo e Mídias (`.zip` e pastas de vídeos em `frontend/src/assets/`)**  
-   Arquivos utilizados no treinamento e validação do sistema, removidos da versão pública para resguardar direitos de imagem e evitar o armazenamento de arquivos binários pesados no histórico do Git.
+### 📁 Estrutura de Pastas
 
-> **Nota:** embora os dados brutos de treinamento não estejam disponíveis publicamente, os arquivos de inferência e os pesos convertidos para a web permanecem disponíveis em `frontend/public/tfjs_model/`, permitindo a execução da lógica de IA no front-end.
-
----
-
-## 🛠️ Tecnologias Utilizadas
-
-### Front-End
-- React.js  
-- Vite  
-- Context API  
-- TensorFlow.js  
-- HTML5  
-- CSS3  
-- JavaScript  
-
-### Back-End
-- Python  
-- Flask  
-- SQLite  
-- SQLAlchemy  
-
-### Inteligência Artificial e Visão Computacional
-- MediaPipe  
-- OpenCV  
-- TensorFlow / Keras  
-- KNN (K-Nearest Neighbors)  
-- Modelos em `.h5`, `.keras`, `.joblib` e TensorFlow.js  
-
-### Prototipação e Organização
-- Figma  
-- Git  
-- GitHub  
-
----
-
-## 🧠 Estrutura de IA e Processamento
-
-A camada de Inteligência Artificial do projeto foi estruturada para contemplar diferentes etapas do reconhecimento de sinais:
-
-- **Coleta de dados com visão computacional:** captura de landmarks das mãos utilizando **MediaPipe** e **OpenCV**.
-- **Tratamento e organização dos dados:** scripts para coleta, unificação e preparação das amostras de treino.
-- **Reconhecimento de sinais estáticos:** análise da posição espacial das mãos em sinais sem movimento.
-- **Reconhecimento de sinais dinâmicos:** classificação de **letras com movimento** e **palavras em Libras** com apoio do **KNN**, considerando a sequência temporal dos frames.
-- **Treinamento e validação de modelos:** uso de scripts em Python para gerar, testar e validar os modelos de reconhecimento.
-- **Exportação para a web:** conversão dos modelos treinados para execução no navegador com **TensorFlow.js**.
-
----
-
-## 📁 Estrutura de Pastas Principais
-
-```text
-meu-projeto-libras/
+```
+libraskids/
 ├── backend/
-│   ├── scripts/                # Scripts de coleta, tratamento e treinamento dos modelos
-│   ├── instance/
-│   │   └── professores.db      # Banco de dados local (não versionado)
-│   ├── app.py                  # Inicialização da aplicação Flask
-│   └── models.py               # Modelagem de dados e estruturas do sistema
-│
-├── docs/                       # Capturas de tela e mockups da interface do sistema
-│   ├── login-step-turma.png
-│   ├── login-step-nome.png
-│   ├── login-step-pin.png
-│   ├── dashboard-aluno.png
-│   └── camera-recognition.png
+│   ├── models/                 # Modelos treinados (.h5, .keras, .joblib, .npy)
+│   ├── scripts/                # Scripts de coleta, tratamento e treinamento
+│   ├── instance/               # Banco de dados local (não versionado)
+│   ├── app.py                  # Inicialização Flask
+│   ├── config.py
+│   └── models.py
 │
 ├── frontend/
-│   ├── public/
-│   │   └── tfjs_model/         # Modelos e pesos convertidos para TensorFlow.js
+│   ├── public/tfjs_model/      # Modelo exportado para TensorFlow.js
 │   └── src/
-│       ├── assets/             # Recursos estáticos da interface
-│       ├── context/            # Contextos globais da aplicação
+│       ├── assets/alfabeto/    # Imagens do alfabeto manual
+│       ├── context/            # AuthContext
 │       ├── pages/              # Telas do sistema
-│       └── components/         # Componentes reutilizáveis
+│       └── components/
 │
-├── dataset/                    # Base de dados de sinais (não versionada)
-├── Dados_Libras/               # Arquivos auxiliares de treino (não versionados)
-└── .gitignore                  # Regras de exclusão de arquivos sensíveis
+├── docs/                       # Capturas de tela da interface
+└── README.md
+```
+
+### 🔒 Privacidade e Segurança
+
+Por questões de segurança, LGPD e prevenção a plágio, os seguintes arquivos foram omitidos do repositório público:
+
+- `backend/instance/professores.db` — banco de dados com cadastros
+- `dataset/` e `Dados_Libras/` — bases brutas de treinamento
+- Pastas de vídeos e arquivos `.zip` — assets de mídia pesados
+
+### 🎓 Contexto Acadêmico
+
+- **Instituição:** FATEC Ourinhos
+- **Curso:** Análise e Desenvolvimento de Sistemas (ADS)
+- **Natureza:** Trabalho de Conclusão de Curso
+
+---
+
+## 🇺🇸 English
+
+### 📌 About
+
+**LibrasKids** is an interactive educational software designed to teach **Brazilian Sign Language (Libras)** to hearing children through a gamified, camera-based experience. It combines a **React** front-end with an **AI back-end** that performs real-time sign recognition.
+
+A key differentiator: the system recognizes **both static and dynamic signs** — covering fixed handshapes, letters with movement, and full Libras words.
+
+### 👥 Team
+
+| Name | Role |
+|---|---|
+| **Elisandra Carol da Silva** | Full-Stack Developer |
+| **Maria Clara Soares Bertolo** | Full-Stack Developer |
+
+### 💡 AI Architecture
+
+**Static signs** — spatial analysis of hand landmarks captured by MediaPipe at a single moment in time.
+
+**Dynamic signs** — temporal sequence classification using **KNN (K-Nearest Neighbors)** across multiple frames, handling moving letters and full sign language words.
+
+Trained models are available in `backend/models/`. The browser-ready export lives in `frontend/public/tfjs_model/`.
+
+### 🛠️ Tech Stack
+
+| Layer | Technologies |
+|---|---|
+| **Front-End** | React.js, Vite, TensorFlow.js, Context API |
+| **Back-End** | Python, Flask, SQLite, SQLAlchemy |
+| **AI / Computer Vision** | MediaPipe, OpenCV, TensorFlow/Keras, KNN |
+| **Model Formats** | `.h5`, `.keras`, `.joblib`, `.npy`, TensorFlow.js |
+
+### 🚀 Running Locally
+
+#### Prerequisites
+- Python 3.9+
+- Node.js 18+
+
+#### Back-End
+
+```bash
+git clone https://github.com/elicarolslv/libraskids.git
+cd libraskids/backend
+
+python -m venv venv
+venv\Scripts\activate      # Windows
+source venv/bin/activate   # Linux/Mac
+
+pip install -r requirements.txt
+python app.py
+```
+
+#### Front-End
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Open: `http://localhost:5173`
+
+### 🔒 Data & Privacy
+
+Certain files were intentionally excluded from this public repository for security, LGPD compliance, and academic integrity:
+
+- `backend/instance/professores.db` — teacher registration database
+- `dataset/` and `Dados_Libras/` — raw training data
+- Video folders and `.zip` files — heavy media assets
+
+### 🎓 Academic Context
+
+- **Institution:** FATEC Ourinhos
+- **Program:** Systems Analysis and Development
+- **Type:** Final Course Project (TCC)
