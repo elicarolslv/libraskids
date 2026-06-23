@@ -83,7 +83,7 @@ Os modelos treinados estão disponíveis em `backend/models/` e a versão export
 |---|---|
 | **Front-End** | React.js, Vite, TensorFlow.js, Context API, HTML5, CSS3 |
 | **Back-End** | Python, Flask, SQL |
-| **IA / Visão Computacional** | MediaPipe, OpenCV, TensorFlow/Keras, KNN |
+| **IA / Visão Computacional** | MediaPipe, OpenCV, TensorFlow/Keras, KNN, LSTM |
 | **Formatos de Modelo** | `.h5`, `.keras`, `.joblib`, `.npy`, TensorFlow.js |
 | **Prototipação** | Figma, Git, GitHub |
 
