@@ -7,12 +7,6 @@ backend/instance/
 *.db
 *.sqlite
 
-# === MODELOS DE INTELIGÊNCIA ARTIFICIAL (MUITO PESADOS) ===
-backend/models/*.h5
-backend/models/*.keras
-backend/models/*.joblib
-backend/models/*.npy
-
 # === DATASETS E ARQUIVOS DE MÍDIA LOCAIS ===
 dataset/
 Dados_Libras/
