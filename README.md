@@ -143,7 +143,7 @@ libraskids/
 ├── frontend/
 │   ├── public/tfjs_model/      # Modelo exportado para TensorFlow.js
 │   └── src/
-│       ├── assets/alfabeto/    # Imagens do alfabeto manual
+│       ├── assets/alfabeto/    # Imagens e videos do alfabeto manual NÃO disponibilizados
 │       ├── context/            # AuthContext
 │       ├── pages/              # Telas do sistema
 │       └── components/
@@ -185,9 +185,9 @@ A key differentiator: the system recognizes **both static and dynamic signs** �
 
 ### 💡 AI Architecture
 
-**Static signs** — spatial analysis of hand landmarks captured by MediaPipe at a single moment in time.
+**Static signs** — KNN.
 
-**Dynamic signs** — temporal sequence classification using **KNN (K-Nearest Neighbors)** across multiple frames, handling moving letters and full sign language words.
+**Dynamic signs** — LSTM.
 
 Trained models are available in `backend/models/`. The browser-ready export lives in `frontend/public/tfjs_model/`.
 
@@ -196,8 +196,8 @@ Trained models are available in `backend/models/`. The browser-ready export live
 | Layer | Technologies |
 |---|---|
 | **Front-End** | React.js, Vite, TensorFlow.js, Context API |
-| **Back-End** | Python, Flask, SQLite, SQLAlchemy |
-| **AI / Computer Vision** | MediaPipe, OpenCV, TensorFlow/Keras, KNN |
+| **Back-End** | Python, Flask, SQL |
+| **AI / Computer Vision** | MediaPipe, OpenCV, TensorFlow/Keras, KNN, LSTM |
 | **Model Formats** | `.h5`, `.keras`, `.joblib`, `.npy`, TensorFlow.js |
 
 ### 🚀 Running Locally
