@@ -71,9 +71,9 @@ Login em etapas simplificadas para crianças pequenas — sem necessidade de dig
 
 A IA foi estruturada em duas frentes:
 
-**Sinais estáticos** — análise da posição espacial da mão em um único instante, usando landmarks capturados pelo MediaPipe.
+**Sinais estáticos** — KNN.
 
-**Sinais dinâmicos** — classificação por sequência temporal de frames usando **KNN (K-Nearest Neighbors)**, capturando letras com movimento e palavras completas em Libras.
+**Sinais dinâmicos** — LSTM.
 
 Os modelos treinados estão disponíveis em `backend/models/` e a versão exportada para o navegador está em `frontend/public/tfjs_model/`.
 
