@@ -1,4 +1,4 @@
-#  LibrasKids - Software Educacional com Inteligência Artificial para Ensino de Libras
+# 🤟 LibrasKids - Software Educacional com Inteligência Artificial para Ensino de Libras
 
 <p align="center">
   <a href="https://www.linkedin.com/posts/elisandra-carol-da-silva-02424922b_libraskids-inteligenciaartificial-machinelearning-ugcPost-7473782059153670144-f8TH/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADmFyNwBqC0Juse2lpfrFXJL4BSOpYksPzE" target="_blank">
@@ -6,11 +6,10 @@
   </a>
 </p>
 
-##  Vídeo de Apresentação e Demonstração
+## 📺 Vídeo de Apresentação e Demonstração
 
 O funcionamento da aplicação em tempo real, os testes de interface e a dinâmica de reconhecimento de sinais podem ser assistidos diretamente na publicação oficial do projeto:
-
-👉 [Assista à demonstração completa no LinkedIn](https://www.linkedin.com/posts/elisandra-carol-da-silva-02424922b_libraskids-inteligenciaartificial-machinelearning-ugcPost-7473782059153670144-f8TH/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADmFyNwBqC0Juse2lpfrFXJL4BSOpYksPzE)
+👉 [Assista à demonstração completa no LinkedIn](https://www.linkedin.com/posts/elisandra-carol-da-silva-02424922b_libraskids-inteligenciaartificial-machinelearning-ugcPost-7473782059153670144-f8TH/)
 
 ---
 
@@ -24,7 +23,7 @@ O desenvolvimento do LibrasKids contemplou diferentes etapas da engenharia de so
 
 ---
 
-##  Equipe Desenvolvedora
+## 👥 Equipe Desenvolvedora
 
 Este projeto foi desenvolvido em colaboração por:
 
@@ -33,7 +32,27 @@ Este projeto foi desenvolvido em colaboração por:
 
 ---
 
-##  Diferencial do Projeto e Arquitetura de IA
+## 🖼️ Interface do Usuário (Protótipos do Sistema)
+
+### 🔑 Fluxo de Autenticação Lúdica do Aluno
+
+O processo de login foi projetado em etapas simplificadas (*steppers*) para garantir acessibilidade e usabilidade por crianças pequenas, evitando a necessidade de digitação complexa de e-mails.
+
+|                           Passo 1: Seleção da Turma                          |                           Passo 2: Seleção do Nome                          |                   Passo 3: Entrada com PIN de 4 dígitos                  |
+| :--------------------------------------------------------------------------: | :-------------------------------------------------------------------------: | :----------------------------------------------------------------------: |
+| <img src="./docs/login-step-turma.png" width="250px" alt="Seleção da Turma"> | <img src="./docs/login-step-nome.png" width="250px" alt="Seleção do Aluno"> | <img src="./docs/login-step-pin.png" width="250px" alt="Entrada de PIN"> |
+
+### 🎓 Módulos Gamificados e Reconhecimento em Tempo Real
+
+A área de aprendizado possui módulos temáticos organizados por conquistas e níveis de experiência, além de um espaço dedicado à captura e ao processamento da câmera local.
+
+|                     Painel Principal (Trilhas de Aprendizado)                     |                            Interface de Captura da Câmera e IA                            |
+| :-------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------: |
+| <img src="./docs/dashboard-aluno.png" width="400px" alt="Módulos de Aprendizado"> | <img src="./docs/camera-recognition.png" width="400px" alt="Interface de Reconhecimento"> |
+
+---
+
+## 💡 Diferencial do Projeto e Arquitetura de IA
 
 O principal diferencial do **LibrasKids** está na capacidade de reconhecer **não apenas sinais estáticos**, como letras representadas por posições fixas das mãos, mas também **sinais dinâmicos**, incluindo **letras com movimento** e **palavras completas em Libras**, como saudações e expressões.
 
@@ -86,34 +105,34 @@ Os componentes isolados incluem:
 
 ### Front-End
 
-* **React.js**
-* **Vite**
-* **Context API**
-* **TensorFlow.js**
-* **HTML5**
-* **CSS3**
-* **JavaScript**
+* React.js
+* Vite
+* Context API
+* TensorFlow.js
+* HTML5
+* CSS3
+* JavaScript
 
 ### Back-End
 
-* **Python**
-* **Flask**
-* **SQLite**
-* **SQLAlchemy**
+* Python
+* Flask
+* SQLite
+* SQLAlchemy
 
 ### Inteligência Artificial e Visão Computacional
 
-* **MediaPipe**
-* **OpenCV**
-* **TensorFlow / Keras**
-* **KNN (K-Nearest Neighbors)**
-* **Modelos em `.h5`, `.keras`, `.joblib` e TensorFlow.js**
+* MediaPipe
+* OpenCV
+* TensorFlow / Keras
+* KNN (K-Nearest Neighbors)
+* Modelos em `.h5`, `.keras`, `.joblib` e TensorFlow.js
 
 ### Prototipação e Organização
 
-* **Figma**
-* **Git**
-* **GitHub**
+* Figma
+* Git
+* GitHub
 
 ---
 
@@ -141,6 +160,13 @@ meu-projeto-libras/
 │   ├── app.py                  # Inicialização da aplicação Flask
 │   └── models.py               # Modelagem de dados e estruturas do sistema
 │
+├── docs/                       # Capturas de tela e mockups da interface do sistema
+│   ├── login-step-turma.png
+│   ├── login-step-nome.png
+│   ├── login-step-pin.png
+│   ├── dashboard-aluno.png
+│   └── camera-recognition.png
+│
 ├── frontend/
 │   ├── public/
 │   │   └── tfjs_model/         # Modelos e pesos convertidos para TensorFlow.js
@@ -154,25 +180,3 @@ meu-projeto-libras/
 ├── Dados_Libras/               # Arquivos auxiliares de treino (não versionados)
 └── .gitignore                  # Regras de exclusão de arquivos sensíveis
 ```
-
----
-
-## ⚙️ Funcionalidades do Sistema
-
-O LibrasKids foi projetado para oferecer uma experiência educacional interativa, reunindo recursos de interface, autenticação e reconhecimento de sinais. Entre as principais funcionalidades desenvolvidas, destacam-se:
-
-* Interface lúdica voltada ao ensino de Libras para crianças;
-* Navegação entre telas de aprendizagem e acompanhamento;
-* Sistema de autenticação com perfis de acesso;
-* Reconhecimento de sinais estáticos;
-* Reconhecimento de sinais dinâmicos, incluindo letras com movimento e palavras;
-* Integração entre front-end e back-end para processamento dos dados;
-* Execução do modelo de IA diretamente no navegador com TensorFlow.js.
-
----
-
-## 🚀 Considerações Finais
-
-O **LibrasKids** foi desenvolvido com o objetivo de unir **tecnologia, acessibilidade e educação** em uma única solução, explorando recursos de desenvolvimento web, visão computacional e inteligência artificial para apoiar o ensino de Libras de forma mais interativa.
-
-Além do desenvolvimento da interface e da arquitetura do sistema, o projeto também se destacou pela construção de uma solução capaz de reconhecer **sinais estáticos e dinâmicos**, incluindo **letras com movimento** e **palavras em Libras**, aspecto que representa um dos principais diferenciais técnicos do trabalho.
