@@ -82,7 +82,7 @@ Os modelos treinados estão disponíveis em `backend/models/` e a versão export
 | Camada | Tecnologias |
 |---|---|
 | **Front-End** | React.js, Vite, TensorFlow.js, Context API, HTML5, CSS3 |
-| **Back-End** | Python, Flask, SQLite, SQLAlchemy |
+| **Back-End** | Python, Flask, SQL |
 | **IA / Visão Computacional** | MediaPipe, OpenCV, TensorFlow/Keras, KNN |
 | **Formatos de Modelo** | `.h5`, `.keras`, `.joblib`, `.npy`, TensorFlow.js |
 | **Prototipação** | Figma, Git, GitHub |
