@@ -9,8 +9,7 @@
 ## 📺 Vídeo de Apresentação e Demonstração
 
 O funcionamento da aplicação em tempo real, os testes de interface e a dinâmica de reconhecimento de sinais podem ser assistidos diretamente na publicação oficial do projeto:
-👉 [Assista à demonstração completa no LinkedIn]([https://www.instagram.com/p/C6hX6RxgWjX/](https://www.linkedin.com/posts/elisandra-carol-da-silva-02424922b_libraskids-inteligenciaartificial-machinelearning-ugcPost-7473782059153670144-f8TH/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADmFyNwBqC0Juse2lpfrFXJL4BSOpYksPzE)) 
-
+👉 [Assista à demonstração completa no LinkedIn](https://www.linkedin.com/posts/elisandra-carol-da-silva-02424922b_libraskids-inteligenciaartificial-machinelearning-ugcPost-7473782059153670144-f8TH/)
 ---
 
 ## 📌 Sobre o Projeto
