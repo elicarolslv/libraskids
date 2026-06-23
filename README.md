@@ -1,4 +1,4 @@
-# 🤟 LibrasKids - Software Educacional com Inteligência Artificial para Ensino de Libras
+#  LibrasKids - Software Educacional com Inteligência Artificial para Ensino de Libras
 
 <p align="center">
   <a href="https://www.linkedin.com/posts/elisandra-carol-da-silva-02424922b_libraskids-inteligenciaartificial-machinelearning-ugcPost-7473782059153670144-f8TH/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADmFyNwBqC0Juse2lpfrFXJL4BSOpYksPzE" target="_blank">
@@ -6,7 +6,7 @@
   </a>
 </p>
 
-## 📺 Vídeo de Apresentação e Demonstração
+##  Vídeo de Apresentação e Demonstração
 
 O funcionamento da aplicação em tempo real, os testes de interface e a dinâmica de reconhecimento de sinais podem ser assistidos diretamente na publicação oficial do projeto:
 
@@ -24,7 +24,7 @@ O desenvolvimento do LibrasKids contemplou diferentes etapas da engenharia de so
 
 ---
 
-## 👥 Equipe Desenvolvedora
+##  Equipe Desenvolvedora
 
 Este projeto foi desenvolvido em colaboração por:
 
@@ -33,7 +33,7 @@ Este projeto foi desenvolvido em colaboração por:
 
 ---
 
-## 💡 Diferencial do Projeto e Arquitetura de IA
+##  Diferencial do Projeto e Arquitetura de IA
 
 O principal diferencial do **LibrasKids** está na capacidade de reconhecer **não apenas sinais estáticos**, como letras representadas por posições fixas das mãos, mas também **sinais dinâmicos**, incluindo **letras com movimento** e **palavras completas em Libras**, como saudações e expressões.
 
