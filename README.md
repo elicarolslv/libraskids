@@ -6,7 +6,7 @@
   </a>
 </p>
 
-## 📺 Vídeo de Apresentação e Demonstração
+## Vídeo de Apresentação e Demonstração
 
 O funcionamento da aplicação em tempo real, os testes de interface e a dinâmica de reconhecimento de sinais podem ser assistidos diretamente na publicação oficial do projeto:
 👉 [Assista à demonstração completa no LinkedIn](https://www.linkedin.com/posts/elisandra-carol-da-silva-02424922b_libraskids-inteligenciaartificial-machinelearning-ugcPost-7473782059153670144-f8TH/)
