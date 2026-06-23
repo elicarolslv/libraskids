@@ -34,21 +34,25 @@ Este projeto foi desenvolvido em colaboração por:
 
 ## 🖼️ Interface do Usuário (Protótipos do Sistema)
 
-## 🖼️ Interface do Usuário (Protótipos do Sistema)
-
 ### 🔑 Fluxo de Autenticação Lúdica do Aluno
 
 O processo de login foi projetado em etapas simplificadas (*steppers*) para garantir acessibilidade e usabilidade por crianças pequenas, evitando a necessidade de digitação complexa de e-mails.
 
 <p align="center">
-  <img src="./docs/login-step-turma.png" width="30%" alt="Passo 1: Seleção da Turma">
-  <img src="./docs/login-step-nome.png" width="30%" alt="Passo 2: Seleção do Nome">
-  <img src="./docs/login-step-pin.png" width="30%" alt="Passo 3: Entrada com PIN de 4 dígitos">
+  <img src="./docs/login-step-turma.png" width="42%" alt="Passo 1: Seleção da Turma">
+  <img src="./docs/login-step-nome.png" width="28%" alt="Passo 2: Seleção do Nome">
 </p>
 
 <p align="center">
   <strong>Passo 1:</strong> Seleção da Turma &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <strong>Passo 2:</strong> Seleção do Nome &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <strong>Passo 2:</strong> Seleção do Nome
+</p>
+
+<p align="center">
+  <img src="./docs/login-step-pin.png" width="38%" alt="Passo 3: Entrada com PIN de 4 dígitos">
+</p>
+
+<p align="center">
   <strong>Passo 3:</strong> Entrada com PIN de 4 dígitos
 </p>
 
@@ -65,6 +69,8 @@ A área de aprendizado possui módulos temáticos organizados por conquistas e n
   <strong>Painel Principal (Trilhas de Aprendizado)</strong> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <strong>Interface de Captura da Câmera e IA</strong>
 </p>
+
+---
 
 ## 💡 Diferencial do Projeto e Arquitetura de IA
 
